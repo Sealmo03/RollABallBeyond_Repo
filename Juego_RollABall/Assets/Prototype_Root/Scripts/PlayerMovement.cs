@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [Header("Public References")]
-    public Rigidbody playerRb; //Variable para referenciar el rb del jugador, y as� modificarlo cuando quiera en el c�digo
+    public Rigidbody playerRb; //Variable para referenciar el rb del jugador, y asi modificarlo cuando quiera en el codigo
 
     [Header("Movement Variables")]
     public float speed;
