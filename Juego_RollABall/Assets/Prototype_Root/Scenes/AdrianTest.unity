@@ -1587,7 +1587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044035315}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16937406, y: 0.15333857, z: -0.026687203, w: 0.9731843}
+  m_LocalRotation: {x: 0.16937414, y: 0.15333869, z: -0.026687246, w: 0.9731842}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1666,7 +1666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046282515}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15164433, y: 0.15379877, z: -0.023893675, w: 0.976104}
+  m_LocalRotation: {x: 0.15164438, y: 0.15379873, z: -0.023893677, w: 0.976104}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1865,6 +1865,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1184014651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184014654}
+  - component: {fileID: 1184014653}
+  - component: {fileID: 1184014655}
+  m_Layer: 0
+  m_Name: LastLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1184014653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184014651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1184014654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184014651}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8236732, y: -0.33, z: 7.57}
+  m_LocalScale: {x: 83.97357, y: 0.6708164, z: 86.56883}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184014655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184014651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9088b17949d1d644bb9eee8762cbe206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: SergioTest
 --- !u!1 &1212770874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2303,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5198280284486996240, guid: 30694b9514845864d968d25a5c758f64,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.651942
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198280284486996240, guid: 30694b9514845864d968d25a5c758f64,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.4401524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198280284486996240, guid: 30694b9514845864d968d25a5c758f64,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2360,7 +2437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525270769}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13391145, y: 0.15420687, z: -0.021099601, w: 0.97869444}
+  m_LocalRotation: {x: 0.1339115, y: 0.1542069, z: -0.021099616, w: 0.97869444}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3129,6 +3206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: playerRb
       objectReference: {fileID: 0}
+    - target: {fileID: 8482607489360950431, guid: 759690628899278479ee6dae33f6a44a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3155,3 +3237,4 @@ SceneRoots:
   - {fileID: 1858488859}
   - {fileID: 1634781427}
   - {fileID: 1388848941}
+  - {fileID: 1184014654}
