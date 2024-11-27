@@ -6,7 +6,6 @@ public class PlatformDown : MonoBehaviour
 {
 
     public float fallSpeed;
-
     private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))

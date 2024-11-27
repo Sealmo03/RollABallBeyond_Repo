@@ -6,13 +6,15 @@ using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
-    public Rigidbody playerRb;
+    public float speed;
+    private float horInput; 
+    private float verInput; 
+    public Rigidbody rb;
 
 
 
     public float jumpForce;
-    public float airMultiplier;
+
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
@@ -22,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Ground Check")]
     public bool isGrounded = true;
-    public bool grounded = true;
 
     public Transform orientation;
 
@@ -30,8 +31,6 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
 
     Vector3 moveDirection;
-
-    Rigidbody rb;
 
     [SerializeField] Transform cameraFollowTarget;
 
@@ -44,10 +43,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
-        Jump();
         MyInput();
-        SpeedControl();
+        Jump();
 
     }
 
@@ -60,33 +57,20 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
-    
-       
     }
 
     private void MovePlayer()
     {
+        // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        if(grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+  
+            rb.AddForce(moveDirection.normalized * speed * 10f, ForceMode.Force);
 
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+
+
     }
 
-    private void SpeedControl()
-    {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-        // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
-        {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
-        }
-    }
 
     void Jump()
     {
@@ -95,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded == true)
             {
                 isGrounded = false;
-                playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
         }
     }
@@ -106,14 +90,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
         }
     }
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
 
     private void LateUpdate()
     {
