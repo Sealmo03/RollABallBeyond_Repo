@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prototype_Root/Scenes/VictorTest.unity
     guid: 79d5e1234f3c13143ac1fd2bbeb5a14f
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Final.unity
+    guid: 313f0ba53d24b9e4aa07cf021913409f
   m_configObjects: {}
