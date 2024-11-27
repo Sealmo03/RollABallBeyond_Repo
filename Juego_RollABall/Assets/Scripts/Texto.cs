@@ -8,7 +8,7 @@ public class Texto : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke(nameof(ApagarPanel), 20f);
+        Invoke(nameof(ApagarPanel), 15f);
     }
 
     // Update is called once per frame
