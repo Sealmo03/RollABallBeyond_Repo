@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prototype_Root/Scenes/CarlaTest.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/AdrianTest.unity
+    guid: d855d07c5cc5b9e42b9ca60a7b0b42d6
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/EntradaCastillo.unity
+    guid: 51b0b391e13af4040bb3630a258474e8
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/SergioTest.unity
+    guid: e71d6d727a11e7a448238aa47e02e172
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/VictorTest.unity
+    guid: 79d5e1234f3c13143ac1fd2bbeb5a14f
+  - enabled: 1
+    path: Assets/Prototype_Root/Scenes/Final.unity
+    guid: 313f0ba53d24b9e4aa07cf021913409f
   m_configObjects: {}
